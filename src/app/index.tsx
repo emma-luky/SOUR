@@ -1,26 +1,43 @@
-import { collection, getDocs } from 'firebase/firestore/lite';
 import { Button, YStack } from 'tamagui';
-
-import { db } from '../support/firebase';
-
-async function getPosts() {
-  const allPosts = await getDocs(collection(db, 'posts'));
-  return allPosts.docs.map((post) => ({ id: post.id, ...post.data() }));
-}
+import { Image, StyleSheet, Text, TouchableOpacity, View, TextInput } from 'react-native';
+import { router } from 'expo-router';
+import React, {useState} from 'react'
 
 export default function App() {
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
   return (
     <YStack flex={1} justifyContent="center" alignItems="center">
+      <TextInput
+        // style={styles.input}
+        onChangeText={username => setUsername(username)}
+        value={username}
+        placeholder="Username"
+      />
+      <TextInput
+        // style={styles.input}
+        onChangeText={password => setPassword(password)}
+        value={password}
+        placeholder="Password"
+      />
       <Button
         onPress={async () => {
-          const posts = await getPosts();
-          for (const post of posts) {
-            console.log('>>', post);
-          }
+          router.replace(`/discover?username=${username}`);
         }}
       >
-        Get Posts
+        Login
       </Button>
+      <View>
+          <TouchableOpacity
+            onPress={() => {
+              router.replace('/signup');
+            }}
+          >
+            <Text>
+              Don't have an account? Sign Up
+            </Text>
+          </TouchableOpacity>
+        </View>
     </YStack>
   );
 }
