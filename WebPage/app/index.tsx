@@ -1,5 +1,5 @@
-import { Stack } from 'expo-router';
-import { View, Text, TouchableOpacity, ActivityIndicator } from 'react-native';
+import { Link, Stack } from 'expo-router';
+import { View, Text, ActivityIndicator, Pressable } from 'react-native';
 import styles from '@/constants/Style'
 import { useEffect, useState } from 'react';
 import * as Font from 'expo-font';
@@ -7,6 +7,10 @@ import React from 'react';
 
 export default function Index() {
     const [fontsLoaded, setFontsLoaded] = useState(false);
+    const prototypeLink = 'https://www.figma.com/proto/g2zNAIX7VL5Y5x1WFeiQqM/Prototyping-in-Figma?page-id=0%3A1&node-id=0-2&node-type=frame&viewport=70%2C294%2C0.18&t=KqrqD8DWfHfmiwRZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=0%3A2';
+    const [aboutHovered, setAboutHovered] = useState(false);
+    const [prototypeHovered, setPrototypeHovered] = useState(false);
+    const [contactHovered, setContactHovered] = useState(false);
 
     useEffect(() => {
         const loadFonts = async () => {
@@ -41,17 +45,32 @@ export default function Index() {
                                 <Text style={styles.h3}>Shop, Own, Upcycle, Reuse</Text>
                                 <View style={[styles.row, styles.links]}>
                                     <View style={styles.column}>
-                                        <TouchableOpacity>
-                                            <Text style={styles.link}>&rarr; about</Text>
-                                        </TouchableOpacity>
-                                        <TouchableOpacity>
-                                            <Text style={styles.link}>&rarr; prototype</Text>
-                                        </TouchableOpacity>
+                                        <Pressable
+                                            onHoverIn={() => setAboutHovered(true)}
+                                            onHoverOut={() => setAboutHovered(false)}>
+                                            <Link href={'/about'} style={aboutHovered ? styles.hover : styles.link}>
+                                                &rarr; about
+                                            </Link>
+                                        </Pressable>
+                                        <Pressable
+                                            onHoverIn={() => setPrototypeHovered(true)}
+                                            onHoverOut={() => setPrototypeHovered(false)}>
+                                            <Link
+                                                href={prototypeLink}
+                                                style={prototypeHovered ? styles.hover : styles.link}
+                                                target="_blank">
+                                                &rarr; prototype
+                                            </Link>
+                                        </Pressable>
                                     </View>
                                     <View style={styles.column}>
-                                        <TouchableOpacity>
-                                            <Text style={styles.link}>&rarr; contact us</Text>
-                                        </TouchableOpacity>
+                                        <Pressable
+                                            onHoverIn={() => setContactHovered(true)}
+                                            onHoverOut={() => setContactHovered(false)}>
+                                            <Link href='/contact' style={contactHovered ? styles.hover : styles.link}>
+                                                &rarr; contact
+                                            </Link>
+                                        </Pressable>
                                     </View>
                                 </View>
                             </View>

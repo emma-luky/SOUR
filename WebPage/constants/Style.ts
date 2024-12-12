@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
   h1: {
     fontSize: 300,
-    fontFamily: 'Passion One', // Custom fonts must be added and linked in React Native.
+    fontFamily: 'PassionOne',
     fontWeight: '900',
     fontStyle: 'italic',
     color: '#FFDB58',
@@ -35,6 +35,15 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     color: '#FFFDD0',
     marginLeft: 50,
+    textDecorationLine: 'underline'
+  },
+  hover: {
+    fontSize: 30,
+    fontFamily: 'Mandali',
+    fontWeight: '400',
+    color:' #800020',
+    marginLeft: 50,
+    textDecorationLine: 'underline'
   },
   links: {
     marginLeft: 150,
