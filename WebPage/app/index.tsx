@@ -36,9 +36,7 @@ export default function Index() {
                         <View style={styles.column}>
 
                             <View style={styles.row}>
-                                <Text style={styles.h1}>
-                                    <Text style={styles.h1}>SOUR</Text>
-                                </Text>
+                                <Text style={styles.h1}>SOUR</Text>
                             </View>
 
                             <View style={styles.row}>

@@ -28,8 +28,9 @@ export default function Index() {
             <>
                 <Stack screenOptions={{ headerShown: false }} />
                 <View style={styles.container}>
-                    <Text style={styles.h1}>
-                        <Text style={styles.h1}>About</Text>
+                    <Text style={styles.h1}>About</Text>
+                    <Text style={styles.p}>
+                    SOUR is a social-media-driven, e-commerce mobile application designed to revolutionize second-hand fashion by supporting small businesses and promoting sustainable shopping. The fashion industry is one of the largest contributors to global carbon emissions, with fast fashion being responsible for 10% of total emissions. SOUR encourages second-hand clothing sales by empowering small sellers and providing buyers with an engaging, personalized shopping experience.
                     </Text>
                 </View>
             </>

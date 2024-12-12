@@ -29,6 +29,13 @@ const styles = StyleSheet.create({
     color: '#FFFDD0',
     margin: 0,
   },
+  p: {
+    fontSize: 20,
+    fontFamily: 'Mandali',
+    fontWeight: '400',
+    color: '#FFFDD0',
+    margin: 0,
+  },
   link: {
     fontSize: 30,
     fontFamily: 'Mandali',

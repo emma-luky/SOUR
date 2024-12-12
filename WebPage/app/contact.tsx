@@ -28,9 +28,7 @@ export default function Index() {
             <>
                 <Stack screenOptions={{ headerShown: false }} />
                 <View style={styles.container}>
-                    <Text style={styles.h1}>
-                        <Text style={styles.h1}>Contact</Text>
-                    </Text>
+                    <Text style={styles.h1}>Contact</Text>
                 </View>
             </>
         );
