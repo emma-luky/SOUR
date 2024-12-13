@@ -1,6 +1,7 @@
 import { Link, Stack } from 'expo-router';
 import { View, Text, ActivityIndicator, Pressable } from 'react-native';
 import styles from '@/constants/Style'
+import NavBar from '@/components/NavBar'
 import { useEffect, useState } from 'react';
 import * as Font from 'expo-font';
 import React from 'react';
@@ -31,6 +32,7 @@ export default function Index() {
         return (
             <>
                 <Stack screenOptions={{ headerShown: false }} />
+                <NavBar/>
                 <View style={styles.container}>
                     <View style={styles.row}>
                         <View style={styles.column}>

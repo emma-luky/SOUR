@@ -55,6 +55,16 @@ const styles = StyleSheet.create({
   links: {
     marginLeft: 150,
   },
+  navbar: {
+    backgroundColor: '#800020',
+    flex: 0.1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+    paddingLeft: '2.5%',
+    paddingRight: '2.5%'
+  }
 });
 
 export default styles;

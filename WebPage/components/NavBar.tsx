@@ -1,7 +1,5 @@
-import { Link, Stack, router } from 'expo-router';
 import { View, Text, TouchableOpacity, ActivityIndicator, Pressable } from 'react-native';
 import styles from '@/constants/Style';
-import NavBar from '@/components/NavBar';
 import { useEffect, useState } from 'react';
 import * as Font from 'expo-font';
 import React from 'react';
@@ -27,10 +25,18 @@ export default function Index() {
     else {
         return (
             <>
-                <Stack screenOptions={{ headerShown: false }} />
-                <NavBar/>
-                <View style={styles.container}>
-                    <Text style={styles.h1}>Contact</Text>
+                <View style={styles.navbar}>
+                    <View style={[styles.column, { flex: 2}, {}]}>
+                        <Text style={styles.p}>LOGO</Text>
+                    </View>
+                    <View style={[styles.column, { flex: 1 }]}>
+                        <View style={[styles.row, { justifyContent: 'space-between' }]}>
+                            <Text style={styles.p}>main</Text>
+                            <Text style={styles.p}>about</Text>
+                            <Text style={styles.p}>prototype</Text>
+                            <Text style={styles.p}>contact</Text>
+                        </View>
+                    </View>
                 </View>
             </>
         );

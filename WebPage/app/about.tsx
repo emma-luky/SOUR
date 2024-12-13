@@ -1,6 +1,7 @@
-import { Link, Stack, router } from 'expo-router';
+import { Stack } from 'expo-router';
 import { View, Text, TouchableOpacity, ActivityIndicator, Pressable } from 'react-native';
 import styles from '@/constants/Style'
+import NavBar from '@/components/NavBar'
 import { useEffect, useState } from 'react';
 import * as Font from 'expo-font';
 import React from 'react';
@@ -27,6 +28,7 @@ export default function Index() {
         return (
             <>
                 <Stack screenOptions={{ headerShown: false }} />
+                <NavBar/>
                 <View style={styles.container}>
                     <Text style={styles.h1}>About</Text>
                     <Text style={styles.p}>
