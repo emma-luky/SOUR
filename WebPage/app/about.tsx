@@ -28,7 +28,7 @@ export default function Index() {
         return (
             <>
                 <Stack screenOptions={{ headerShown: false }} />
-                <NavBar/>
+                <NavBar current='about'/>
                 <View style={styles.container}>
                     <Text style={styles.h1}>About</Text>
                     <Text style={styles.p}>

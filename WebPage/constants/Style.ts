@@ -36,6 +36,9 @@ const styles = StyleSheet.create({
     color: '#FFFDD0',
     margin: 0,
   },
+  links: {
+    marginLeft: 150,
+  },
   link: {
     fontSize: 30,
     fontFamily: 'Mandali',
@@ -48,12 +51,37 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontFamily: 'Mandali',
     fontWeight: '400',
-    color:' #800020',
+    color:'#800020',
     marginLeft: 50,
     textDecorationLine: 'underline'
   },
-  links: {
-    marginLeft: 150,
+  navbarLink: {
+    fontFamily: 'Mandali',
+    fontSize: 20,
+    fontWeight: '400',
+    color: '#FFFDD0',
+    paddingLeft: 5,
+    paddingRight: 5,
+  },
+  navbarHover: {
+    fontFamily: 'Mandali',
+    fontSize: 20,
+    fontWeight: '400',
+    color: '#FFFDD0',
+    backgroundColor: '#FFFDD050',
+    paddingLeft: 5,
+    paddingRight: 5,
+    borderRadius: 10,
+  },
+  activeLink:{
+    fontFamily: 'Mandali',
+    fontSize: 20,
+    fontWeight: '400',
+    color: '#800020',
+    backgroundColor: '#FFFDD0',
+    paddingLeft: 5,
+    paddingRight: 5,
+    borderRadius: 10,
   },
   navbar: {
     backgroundColor: '#800020',

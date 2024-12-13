@@ -1,16 +1,19 @@
-import { View, Text, TouchableOpacity, ActivityIndicator, Pressable } from 'react-native';
+import { View, Text, TouchableOpacity, ActivityIndicator, Pressable, ImageBackground } from 'react-native';
 import styles from '@/constants/Style';
 import { useEffect, useState } from 'react';
 import * as Font from 'expo-font';
 import React from 'react';
+import { Link } from 'expo-router';
 
-export default function Index() {
+export default function NavBar({ current }: { current: string }) {
     const [fontsLoaded, setFontsLoaded] = useState(false);
+    const [homeHovered, setHomeHovered] = useState(false);
+    const [aboutHovered, setAboutHovered] = useState(false);
+    const [contactHovered, setContactHovered] = useState(false);
 
     useEffect(() => {
         const loadFonts = async () => {
             await Font.loadAsync({
-                'PassionOne': require('../assets/fonts/PassionOne-Black.ttf'),
                 'Mandali': require('../assets/fonts/Mandali-Regular.ttf'),
             });
             setFontsLoaded(true);
@@ -18,6 +21,11 @@ export default function Index() {
 
         loadFonts();
     }, []);
+
+    const getLinkStyle = (page: string, isHovered: boolean) => {
+        if (current === page) return styles.activeLink;
+        return isHovered ? styles.navbarHover : styles.navbarLink;
+    };
 
     if (!fontsLoaded) {
         return <ActivityIndicator size="large" color="#0000ff" />;
@@ -31,10 +39,27 @@ export default function Index() {
                     </View>
                     <View style={[styles.column, { flex: 1 }]}>
                         <View style={[styles.row, { justifyContent: 'space-between' }]}>
-                            <Text style={styles.p}>main</Text>
-                            <Text style={styles.p}>about</Text>
-                            <Text style={styles.p}>prototype</Text>
-                            <Text style={styles.p}>contact</Text>
+                            <Pressable
+                                onHoverIn={() => setHomeHovered(true)}
+                                onHoverOut={() => setHomeHovered(false)}>
+                                <Link href={'/'} style={getLinkStyle('home', homeHovered)}>
+                                    HOME
+                                </Link>
+                            </Pressable>
+                            <Pressable
+                                onHoverIn={() => setAboutHovered(true)}
+                                onHoverOut={() => setAboutHovered(false)}>
+                                <Link href={'/about'} style={getLinkStyle('about', aboutHovered)}>
+                                    ABOUT
+                                </Link>
+                            </Pressable>
+                            <Pressable
+                                onHoverIn={() => setContactHovered(true)}
+                                onHoverOut={() => setContactHovered(false)}>
+                                <Link href={'/contact'} style={getLinkStyle('contact', contactHovered)}>
+                                    CONTACT
+                                </Link>
+                            </Pressable>
                         </View>
                     </View>
                 </View>
