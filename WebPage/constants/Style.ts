@@ -1,12 +1,18 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  container: {
+  homeContainer: {
     backgroundColor: '#c75f40',
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  container: {
+    backgroundColor: '#c75f40',
+    flex: 1,
+    flexDirection: 'column',
+    padding: 50
   },
   column: {
     flexDirection: 'column',
@@ -16,6 +22,14 @@ const styles = StyleSheet.create({
   },
   h1: {
     fontSize: 300,
+    fontFamily: 'PassionOne',
+    fontWeight: '900',
+    fontStyle: 'italic',
+    color: '#FFDB58',
+    margin: 0,
+  },
+  h2: {
+    fontSize: 150,
     fontFamily: 'PassionOne',
     fontWeight: '900',
     fontStyle: 'italic',
@@ -60,8 +74,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '400',
     color: '#FFFDD0',
-    paddingLeft: 5,
-    paddingRight: 5,
+    paddingLeft: 15,
+    paddingRight: 15,
   },
   navbarHover: {
     fontFamily: 'Mandali',
@@ -69,9 +83,9 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     color: '#FFFDD0',
     backgroundColor: '#FFFDD050',
-    paddingLeft: 5,
-    paddingRight: 5,
-    borderRadius: 10,
+    paddingLeft: 15,
+    paddingRight: 15,
+    borderRadius: 20,
   },
   activeLink:{
     fontFamily: 'Mandali',
@@ -79,9 +93,9 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     color: '#800020',
     backgroundColor: '#FFFDD0',
-    paddingLeft: 5,
-    paddingRight: 5,
-    borderRadius: 10,
+    paddingLeft: 15,
+    paddingRight: 15,
+    borderRadius: 20,
   },
   navbar: {
     backgroundColor: '#800020',
@@ -92,7 +106,16 @@ const styles = StyleSheet.create({
     width: '100%',
     paddingLeft: '2.5%',
     paddingRight: '2.5%'
-  }
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#ccc',
+    padding: 10,
+    marginVertical: 10,
+    borderRadius: 5,
+    width: '100%',
+    fontSize: 16,
+},
 });
 
 export default styles;

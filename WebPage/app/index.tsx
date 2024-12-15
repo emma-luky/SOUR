@@ -33,7 +33,7 @@ export default function Index() {
             <>
                 <Stack screenOptions={{ headerShown: false }} />
                 <NavBar current='home'/>
-                <View style={styles.container}>
+                <View style={styles.homeContainer}>
                     <View style={styles.row}>
                         <View style={styles.column}>
 
