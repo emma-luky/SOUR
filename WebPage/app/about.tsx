@@ -1,10 +1,11 @@
 import { Stack } from 'expo-router';
-import { View, Text, TouchableOpacity, ActivityIndicator, Pressable } from 'react-native';
+import { ScrollView, View, Text, ActivityIndicator, Pressable } from 'react-native';
 import styles from '@/constants/Style'
 import NavBar from '@/components/NavBar'
 import { useEffect, useState } from 'react';
 import * as Font from 'expo-font';
 import React from 'react';
+import SourTimeline from '@/components/Timeline';
 
 export default function About() {
     const [fontsLoaded, setFontsLoaded] = useState(false);
@@ -29,12 +30,13 @@ export default function About() {
             <>
                 <Stack screenOptions={{ headerShown: false }} />
                 <NavBar current='about'/>
-                <View style={styles.container}>
-                    <Text style={styles.h2}>About</Text>
+                <ScrollView style={styles.container}>
+                    <Text style={styles.h2}>Your style, your community, your impact</Text>
                     <Text style={styles.p}>
-                        SOUR is a social-media-driven, e-commerce mobile application designed to revolutionize second-hand fashion by supporting small businesses and promoting sustainable shopping. The fashion industry is one of the largest contributors to global carbon emissions, with fast fashion being responsible for 10% of total emissions. SOUR encourages second-hand clothing sales by empowering small sellers and providing buyers with an engaging, personalized shopping experience.
+                        SOUR aims to make second-hand fashion a first-choice by connecting buyers and sellers in a dynamic, social marketplace.
                     </Text>
-                </View>
+                    <SourTimeline/>
+                </ScrollView>
             </>
         );
     }
