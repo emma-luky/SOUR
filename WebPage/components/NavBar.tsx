@@ -23,7 +23,7 @@ export default function NavBar({ current }: { current: string }) {
     }, []);
 
     const getLinkStyle = (page: string, isHovered: boolean) => {
-        if (current === page) return styles.activeLink;
+        if (current === page) return styles.activePage;
         return isHovered ? styles.navbarHover : styles.navbarLink;
     };
 

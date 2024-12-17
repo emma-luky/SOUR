@@ -69,6 +69,23 @@ const styles = StyleSheet.create({
     marginLeft: 50,
     textDecorationLine: 'underline'
   },
+  button: {
+    borderWidth: 3,
+    borderColor: '#800020',
+    backgroundColor: '#FFFDD0',
+    padding: 10,
+    marginVertical: 10,
+    borderRadius: 20,
+    width: '30%',
+    alignItems: 'center'
+  },
+  buttonText: {
+    fontSize: 20,
+    fontFamily: 'Mandali',
+    fontWeight: '400',
+    color: '#800020',
+    margin: 0,
+  },
   navbarLink: {
     fontFamily: 'Mandali',
     fontSize: 20,
@@ -87,7 +104,7 @@ const styles = StyleSheet.create({
     paddingRight: 15,
     borderRadius: 20,
   },
-  activeLink:{
+  activePage:{
     fontFamily: 'Mandali',
     fontSize: 20,
     fontWeight: '400',
@@ -108,13 +125,17 @@ const styles = StyleSheet.create({
     paddingRight: '2.5%'
   },
   input: {
-    borderWidth: 1,
-    borderColor: '#ccc',
+    borderWidth: 2,
+    borderColor: '#800020',
+    backgroundColor: '#FFFDD0',
+    fontFamily: 'Mandali',
+    fontSize: 20,
+    fontWeight: '400',
+    color: '#800020',
     padding: 10,
     marginVertical: 10,
-    borderRadius: 5,
+    borderRadius: 20,
     width: '100%',
-    fontSize: 16,
 },
 });
 

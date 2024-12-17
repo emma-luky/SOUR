@@ -36,11 +36,9 @@ export default function Index() {
                 <View style={styles.homeContainer}>
                     <View style={styles.row}>
                         <View style={styles.column}>
-
                             <View style={styles.row}>
                                 <Text style={styles.h1}>SOUR</Text>
                             </View>
-
                             <View style={styles.row}>
                                 <Text style={styles.h3}>Shop, Own, Upcycle, Reuse</Text>
                                 <View style={[styles.row, styles.links]}>

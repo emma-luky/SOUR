@@ -1,5 +1,5 @@
-import { Link, Stack, router } from 'expo-router';
-import { View, Text, TextInput, Button, ActivityIndicator, Alert } from 'react-native';
+import { Link, Stack } from 'expo-router';
+import { View, Text, TextInput, Button, ActivityIndicator, Alert, Pressable } from 'react-native';
 import styles from '@/constants/Style';
 import NavBar from '@/components/NavBar';
 import { useEffect, useState } from 'react';
@@ -69,31 +69,41 @@ export default function Index() {
                 <NavBar current='contact' />
                 <View style={styles.container}>
                     <Text style={styles.h2}>Contact</Text>
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Name"
-                        value={form.name}
-                        onChangeText={(text) => setForm({ ...form, name: text })}
-                    />
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Email"
-                        value={form.email}
-                        onChangeText={(text) => setForm({ ...form, email: text })}
-                        keyboardType="email-address"
-                    />
-                    <TextInput
-                        style={[styles.input, { height: 100 }]}
-                        placeholder="Message"
-                        value={form.message}
-                        onChangeText={(text) => setForm({ ...form, message: text })}
-                        multiline
-                    />
-                    <Button
-                        title={isSubmitting ? "Sending..." : "Send Message"}
+                    <View style={{flexDirection: 'column', alignItems: 'center'}}>
+                        <TextInput
+                            style={[styles.input, { flex: 1 }]}
+                            placeholder="Name"
+                            placeholderTextColor="#80002050"
+                            value={form.name}
+                            onChangeText={(text) => setForm({ ...form, name: text })}
+                        />
+                        <TextInput
+                            style={[styles.input, { flex: 1 }]}
+                            placeholder="Email"
+                            placeholderTextColor="#80002050"
+                            value={form.email}
+                            onChangeText={(text) => setForm({ ...form, email: text })}
+                            keyboardType="email-address"
+                        />
+                        <TextInput
+                            style={[styles.input, {flex: 2}]}
+                            placeholder="Message"
+                            placeholderTextColor="#80002050"
+                            value={form.message}
+                            onChangeText={(text) => setForm({ ...form, message: text })}
+                            multiline
+                        />
+                        <Pressable
+                        style={styles.button}
                         onPress={handleSubmit}
-                        disabled={isSubmitting}
-                    />
+                        disabled={isSubmitting}>
+                            <Text style={styles.buttonText}>
+                                {isSubmitting ? "SENDING..." : "SEND MESSAGE"}
+                            </Text>
+                        </Pressable>
+                    </View>
+                    
+                    
                 </View>
             </>
         );
