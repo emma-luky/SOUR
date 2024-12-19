@@ -35,7 +35,12 @@ export default function About() {
                     <Text style={styles.p}>
                         SOUR aims to make second-hand fashion a first-choice by connecting buyers and sellers in a dynamic, social marketplace.
                     </Text>
-                    <SourTimeline/>
+                    <Text style={styles.p}>
+                        Below shows SOUR's past and future milestones.
+                    </Text>
+                    <View style={{flexDirection: 'column', alignItems: 'center'}}>
+                        <SourTimeline/>
+                    </View>
                 </ScrollView>
             </>
         );
