@@ -11,6 +11,7 @@ export default function About() {
     const [fontsLoaded, setFontsLoaded] = useState(false);
 
     useEffect(() => {
+        document.title = 'SOUR | About';
         const loadFonts = async () => {
             await Font.loadAsync({
                 'PassionOne': require('../assets/fonts/PassionOne-Black.ttf'),

@@ -1,5 +1,5 @@
 import { Link, Stack } from 'expo-router';
-import { View, Text, ActivityIndicator, Pressable } from 'react-native';
+import { View, Text, ActivityIndicator, Pressable, ScrollView } from 'react-native';
 import styles from '@/constants/Style'
 import NavBar from '@/components/NavBar'
 import { useEffect, useState } from 'react';
@@ -14,6 +14,7 @@ export default function Index() {
     const [contactHovered, setContactHovered] = useState(false);
 
     useEffect(() => {
+        document.title = 'SOUR';
         const loadFonts = async () => {
             await Font.loadAsync({
                 'PassionOne': require('../assets/fonts/PassionOne-Black.ttf'),
@@ -33,7 +34,10 @@ export default function Index() {
             <>
                 <Stack screenOptions={{ headerShown: false }} />
                 <NavBar current='home'/>
-                <View style={styles.homeContainer}>
+                <ScrollView
+                    style={styles.homeContainer}
+                    contentContainerStyle={{alignItems: 'center', justifyContent: 'center',}}
+                    >
                     <View style={styles.row}>
                         <View style={styles.column}>
                             <View style={styles.row}>
@@ -74,7 +78,7 @@ export default function Index() {
                             </View>
                         </View>
                     </View>
-                </View>
+                </ScrollView>
             </>
         );
     }
