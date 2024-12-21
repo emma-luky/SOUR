@@ -1,6 +1,6 @@
 version: 1
 applications:
-  - appRoot: .  # Root directory of the project
+  - appRoot: WebPage  # Root directory of the project
     frontend:
       phases:
         preBuild:
