@@ -9,8 +9,8 @@ applications:
             - npm install  # Installs npm dependencies
         build:
           commands:
-            - echo "Building the web app"
-            - npx expo export:web  # Exports the web app build
+            - echo "Building the web app dist"
+            - npx expo export 
       artifacts:
         baseDirectory: dist  # The folder where the build outputs will be stored
         files:
