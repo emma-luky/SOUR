@@ -1,0 +1,20 @@
+version: 1
+applications:
+  - appRoot: .  # Root directory of the project
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - echo "Installing dependencies"
+            - npm install  # Installs npm dependencies
+        build:
+          commands:
+            - echo "Building the web app"
+            - npx expo export:web  # Exports the web app build
+      artifacts:
+        baseDirectory: dist  # The folder where the build outputs will be stored
+        files:
+          - '**/*'  # Includes all files in the dist folder
+      cache:
+        paths:
+          - node_modules/**/*  # Caches the node_modules to speed up builds
