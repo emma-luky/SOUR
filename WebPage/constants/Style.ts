@@ -1,19 +1,15 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
+
+const { width, height } = Dimensions.get('window');
+const navbarFontSize = width * 0.014;
+const pFontSize = width * 0.02;
 
 const styles = StyleSheet.create({
-  homeContainer: {
-    backgroundColor: '#c75f40',
-    flex: 1,
-    flexDirection: 'column',
-    // alignItems: 'center',
-    // justifyContent: 'center',
-    padding: 50
-  },
   container: {
     backgroundColor: '#c75f40',
     flex: 1,
     flexDirection: 'column',
-    padding: 50
+    padding: width * 0.02
   },
   column: {
     flexDirection: 'column',
@@ -22,7 +18,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   h1: {
-    fontSize: 300,
+    fontSize: width * 0.2,
     fontFamily: 'PassionOne',
     fontWeight: '900',
     fontStyle: 'italic',
@@ -30,7 +26,7 @@ const styles = StyleSheet.create({
     margin: 0,
   },
   h2: {
-    fontSize: 150,
+    fontSize: width * 0.1,
     fontFamily: 'PassionOne',
     fontWeight: '900',
     fontStyle: 'italic',
@@ -38,24 +34,24 @@ const styles = StyleSheet.create({
     margin: 0,
   },
   h3: {
-    fontSize: 40,
+    fontSize: width * 0.025,
     fontFamily: 'Mandali',
     fontWeight: '400',
     color: '#FFFDD0',
     margin: 0,
   },
   p: {
-    fontSize: 20,
+    fontSize: pFontSize,
     fontFamily: 'Mandali',
     fontWeight: '400',
     color: '#FFFDD0',
     margin: 0,
   },
   links: {
-    marginLeft: 150,
+    marginLeft: width * 0.06,
   },
   link: {
-    fontSize: 30,
+    fontSize: width * 0.025,
     fontFamily: 'Mandali',
     fontWeight: '400',
     color: '#FFFDD0',
@@ -63,7 +59,7 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline'
   },
   hover: {
-    fontSize: 30,
+    fontSize: width * 0.025,
     fontFamily: 'Mandali',
     fontWeight: '400',
     color:'#800020',
@@ -81,7 +77,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   buttonText: {
-    fontSize: 20,
+    fontSize: width * 0.015,
     fontFamily: 'Mandali',
     fontWeight: '400',
     color: '#800020',
@@ -89,7 +85,7 @@ const styles = StyleSheet.create({
   },
   navbarLink: {
     fontFamily: 'Mandali',
-    fontSize: 20,
+    fontSize: navbarFontSize,
     fontWeight: '400',
     color: '#FFFDD0',
     paddingLeft: 15,
@@ -97,7 +93,7 @@ const styles = StyleSheet.create({
   },
   navbarHover: {
     fontFamily: 'Mandali',
-    fontSize: 20,
+    fontSize: navbarFontSize,
     fontWeight: '400',
     color: '#FFFDD0',
     backgroundColor: '#FFFDD050',
@@ -107,7 +103,7 @@ const styles = StyleSheet.create({
   },
   activePage:{
     fontFamily: 'Mandali',
-    fontSize: 20,
+    fontSize: navbarFontSize,
     fontWeight: '400',
     color: '#800020',
     backgroundColor: '#FFFDD0',
@@ -130,7 +126,7 @@ const styles = StyleSheet.create({
     borderColor: '#800020',
     backgroundColor: '#FFFDD0',
     fontFamily: 'Mandali',
-    fontSize: 20,
+    fontSize: width * 0.015,
     fontWeight: '400',
     color: '#800020',
     padding: 10,

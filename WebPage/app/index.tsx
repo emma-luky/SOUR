@@ -35,7 +35,7 @@ export default function Index() {
                 <Stack screenOptions={{ headerShown: false }} />
                 <NavBar current='home'/>
                 <ScrollView
-                    style={styles.homeContainer}
+                    style={styles.container}
                     contentContainerStyle={{alignItems: 'center', justifyContent: 'center',}}
                     >
                     <View style={styles.row}>
