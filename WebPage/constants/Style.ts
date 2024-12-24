@@ -2,6 +2,7 @@ import { Dimensions, StyleSheet } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 const navbarFontSize = width * 0.014;
+const footerFontSize = width * 0.007;
 const pFontSize = width * 0.02;
 
 const styles = StyleSheet.create({
@@ -117,6 +118,34 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    width: '100%',
+    paddingLeft: '2.5%',
+    paddingRight: '2.5%'
+  },
+  footerLink: {
+    fontFamily: 'Mandali',
+    fontSize: footerFontSize,
+    fontWeight: '400',
+    color: '#FFFDD0',
+    paddingLeft: 15,
+    paddingRight: 15,
+  },
+  footerHover: {
+    fontFamily: 'Mandali',
+    fontSize: footerFontSize,
+    fontWeight: '400',
+    color: '#FFFDD0',
+    backgroundColor: '#FFFDD050',
+    paddingLeft: 15,
+    paddingRight: 15,
+    borderRadius: 20,
+  },
+  footer: {
+    backgroundColor: '#800020',
+    flex: 0.1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignContent: 'flex-end',
     width: '100%',
     paddingLeft: '2.5%',
     paddingRight: '2.5%'

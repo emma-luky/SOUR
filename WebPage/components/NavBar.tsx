@@ -4,12 +4,14 @@ import { useEffect, useState } from 'react';
 import * as Font from 'expo-font';
 import React from 'react';
 import { Link } from 'expo-router';
+import { Icon } from 'react-native-elements';
 
 export default function NavBar({ current }: { current: string }) {
     const [fontsLoaded, setFontsLoaded] = useState(false);
     const [homeHovered, setHomeHovered] = useState(false);
     const [aboutHovered, setAboutHovered] = useState(false);
     const [contactHovered, setContactHovered] = useState(false);
+    const githubLink = 'https://github.com/emma-luky/SOUR';
 
     useEffect(() => {
         const loadFonts = async () => {
@@ -38,7 +40,7 @@ export default function NavBar({ current }: { current: string }) {
                         <Text style={styles.p}>LOGO</Text>
                     </View>
                     <View style={[styles.column, { flex: 1 }]}>
-                        <View style={[styles.row, { justifyContent: 'space-between' }]}>
+                        <View style={[styles.row, { justifyContent: 'space-between', alignItems: 'center' } ]}>
                             <Pressable
                                 onHoverIn={() => setHomeHovered(true)}
                                 onHoverOut={() => setHomeHovered(false)}>
@@ -58,6 +60,13 @@ export default function NavBar({ current }: { current: string }) {
                                 onHoverOut={() => setContactHovered(false)}>
                                 <Link href={'/contact'} style={getLinkStyle('contact', contactHovered)}>
                                     CONTACT
+                                </Link>
+                            </Pressable>
+                            <Pressable>
+                                <Link
+                                    href={githubLink}
+                                    target="_blank">
+                                    <Icon name='github' color='#FFFDD0' type="font-awesome"/>
                                 </Link>
                             </Pressable>
                         </View>
