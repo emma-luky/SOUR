@@ -36,7 +36,8 @@ export default function Index() {
                 <NavBar current='home'/>
                 <ScrollView
                     style={styles.container}
-                    contentContainerStyle={{alignItems: 'center', justifyContent: 'center',}}
+                    contentContainerStyle={{alignItems: 'center', justifyContent: 'center'}}
+                    showsVerticalScrollIndicator={false}
                     >
                     <View style={styles.row}>
                         <View style={styles.column}>

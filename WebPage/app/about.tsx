@@ -31,7 +31,7 @@ export default function About() {
             <>
                 <Stack screenOptions={{ headerShown: false }} />
                 <NavBar current='about'/>
-                <ScrollView style={styles.container}>
+                <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
                     <Text style={styles.h2}>Your style, your community, your impact</Text>
                     <Text style={styles.p}>
                         SOUR aims to make second-hand fashion a first-choice by connecting buyers and sellers in a dynamic, social marketplace.

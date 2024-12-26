@@ -68,7 +68,7 @@ export default function Index() {
             <>
                 <Stack screenOptions={{ headerShown: false }} />
                 <NavBar current='contact' />
-                <ScrollView style={styles.container}>
+                <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
                     <Text style={styles.h2}>Contact</Text>
                     <Text style={styles.p}>Have any questions or interested in becoming one of our first users, reach out!</Text>
                     <View style={{flexDirection: 'column', alignItems: 'center'}}>
