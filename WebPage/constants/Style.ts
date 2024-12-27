@@ -3,7 +3,7 @@ import { Dimensions, StyleSheet } from 'react-native';
 const { width, height } = Dimensions.get('window');
 const navbarFontSize = width * 0.014;
 const footerFontSize = width * 0.007;
-const pFontSize = width * 0.017;
+const pFontSize = width * 0.02;
 
 const styles = StyleSheet.create({
   container: {
