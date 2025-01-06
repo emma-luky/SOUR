@@ -37,7 +37,8 @@ const SourTimeline = () => {
             alignItems: 'center',
             justifyContent: 'center',
             backgroundColor: '#f7f3ea',
-            marginTop: 11
+            marginTop: 11,
+            marginLeft: -3
         }}
         titleStyle={{
             fontFamily: 'DM Sans',
