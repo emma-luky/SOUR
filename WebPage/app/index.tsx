@@ -1,5 +1,5 @@
 import { Link, Stack } from 'expo-router';
-import { View, Text, ActivityIndicator, Pressable, ScrollView } from 'react-native';
+import { View, Text, ActivityIndicator, Pressable, ScrollView, Image } from 'react-native';
 import styles from '@/constants/Style'
 import NavBar from '@/components/NavBar'
 import { useEffect, useState } from 'react';
@@ -38,46 +38,9 @@ export default function Index() {
                     contentContainerStyle={{alignItems: 'center', justifyContent: 'center'}}
                     showsVerticalScrollIndicator={false}
                     >
-                    <View style={styles.row}>
-                        <View style={styles.column}>
-                            <View style={styles.row}>
-                                <Text style={styles.h1}>SOUR</Text>
-                            </View>
-                            <View style={styles.row}>
-                                <Text style={styles.h3}>Shop, Own, Upcycle, Reuse</Text>
-                                <View style={[styles.row, styles.links]}>
-                                    <View style={styles.column}>
-                                        <Pressable
-                                            onHoverIn={() => setAboutHovered(true)}
-                                            onHoverOut={() => setAboutHovered(false)}>
-                                            <Link href={'/about'} style={aboutHovered ? styles.hover : styles.link}>
-                                                &rarr; about
-                                            </Link>
-                                        </Pressable>
-                                        <Pressable
-                                            onHoverIn={() => setPrototypeHovered(true)}
-                                            onHoverOut={() => setPrototypeHovered(false)}>
-                                            <Link
-                                                href={prototypeLink}
-                                                style={prototypeHovered ? styles.hover : styles.link}
-                                                target="_blank">
-                                                &rarr; prototype
-                                            </Link>
-                                        </Pressable>
-                                    </View>
-                                    <View style={styles.column}>
-                                        <Pressable
-                                            onHoverIn={() => setContactHovered(true)}
-                                            onHoverOut={() => setContactHovered(false)}>
-                                            <Link href='/contact' style={contactHovered ? styles.hover : styles.link}>
-                                                &rarr; contact
-                                            </Link>
-                                        </Pressable>
-                                    </View>
-                                </View>
-                            </View>
-                        </View>
-                    </View>
+                        <Image
+                            source={require('../assets/images/SOUR-logo-bag-transparent.png')}
+                        />
                 </ScrollView>
             </>
         );
