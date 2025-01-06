@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'center',
-    width: '100%',
+    width: width,
     paddingLeft: '2.5%',
     paddingRight: '2.5%'
   },
