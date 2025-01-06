@@ -1,4 +1,5 @@
 import { Dimensions, StyleSheet } from 'react-native';
+import { ScreenHeight } from 'react-native-elements/dist/helpers';
 
 const { width, height } = Dimensions.get('window');
 const navbarFontSize = width * 0.014;
@@ -7,7 +8,7 @@ const pFontSize = width * 0.02;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#c75f40',
+    backgroundColor: '#d8ccaf',
     flex: 1,
     flexDirection: 'column',
     padding: width * 0.02
@@ -20,32 +21,32 @@ const styles = StyleSheet.create({
   },
   h1: {
     fontSize: width * 0.2,
-    fontFamily: 'PassionOne',
-    fontWeight: '900',
+    fontFamily: 'DM Sans',
+    fontWeight: 'bold',
     fontStyle: 'italic',
-    color: '#FFDB58',
+    color: '#692b20',
     margin: 0,
   },
   h2: {
     fontSize: width * 0.1,
-    fontFamily: 'PassionOne',
+    fontFamily: 'DM Sans',
     fontWeight: '900',
     fontStyle: 'italic',
-    color: '#FFDB58',
+    color: '#692b20',
     margin: 0,
   },
   h3: {
     fontSize: width * 0.025,
-    fontFamily: 'Mandali',
+    fontFamily: 'DM Sans',
     fontWeight: '400',
-    color: '#FFFDD0',
+    color: '#692b20',
     margin: 0,
   },
   p: {
     fontSize: pFontSize,
-    fontFamily: 'Mandali',
+    fontFamily: 'DM Sans',
     fontWeight: '400',
-    color: '#FFFDD0',
+    color: '#692b20',
     margin: 0,
   },
   links: {
@@ -53,15 +54,15 @@ const styles = StyleSheet.create({
   },
   link: {
     fontSize: width * 0.025,
-    fontFamily: 'Mandali',
+    fontFamily: 'DM Sans',
     fontWeight: '400',
-    color: '#FFFDD0',
+    color: '#692b20',
     marginLeft: 50,
     textDecorationLine: 'underline'
   },
   hover: {
     fontSize: width * 0.025,
-    fontFamily: 'Mandali',
+    fontFamily: 'DM Sans',
     fontWeight: '400',
     color:'#800020',
     marginLeft: 50,
@@ -79,44 +80,52 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: width * 0.015,
-    fontFamily: 'Mandali',
+    fontFamily: 'DM Sans',
     fontWeight: '400',
     color: '#800020',
     margin: 0,
   },
+  tinyLogo: {
+    height: height * 0.07,
+    width: width * 0.05,
+    aspectRatio: 1,
+    resizeMode: 'contain',
+    marginLeft: 0,
+    alignSelf: 'center'
+  },
   navbarLink: {
-    fontFamily: 'Mandali',
+    fontFamily: 'DM Sans',
     fontSize: navbarFontSize,
     fontWeight: '400',
-    color: '#FFFDD0',
+    color: '#692b20',
     paddingLeft: 15,
     paddingRight: 15,
   },
   navbarHover: {
-    fontFamily: 'Mandali',
+    fontFamily: 'DM Sans',
     fontSize: navbarFontSize,
     fontWeight: '400',
-    color: '#FFFDD0',
-    backgroundColor: '#FFFDD050',
+    color: '#692b2050',
+    backgroundColor: '#d8ccaf50',
     paddingLeft: 15,
     paddingRight: 15,
     borderRadius: 20,
   },
   activePage:{
-    fontFamily: 'Mandali',
+    fontFamily: 'DM Sans',
     fontSize: navbarFontSize,
     fontWeight: '400',
-    color: '#800020',
-    backgroundColor: '#FFFDD0',
+    color: '#692b20',
+    backgroundColor: '#d8ccaf',
     paddingLeft: 15,
     paddingRight: 15,
     borderRadius: 20,
   },
   navbar: {
-    backgroundColor: '#800020',
+    backgroundColor: '#f7f3ea',
     flex: 0.1,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     width: '100%',
     paddingLeft: '2.5%',

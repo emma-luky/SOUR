@@ -14,8 +14,7 @@ export default function About() {
         document.title = 'SOUR | About';
         const loadFonts = async () => {
             await Font.loadAsync({
-                'PassionOne': require('../assets/fonts/PassionOne-Black.ttf'),
-                'Mandali': require('../assets/fonts/Mandali-Regular.ttf'),
+                'DM Sans': require('../assets/fonts/DMSans-VariableFont_opsz,wght.ttf'),
             });
             setFontsLoaded(true);
         };

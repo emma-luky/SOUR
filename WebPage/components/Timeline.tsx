@@ -18,16 +18,17 @@ const SourTimeline = () => {
         data={data}
         timeStyle={{
             textAlign: 'center',
-            fontFamily: 'Mandali',
+            fontFamily: 'DM Sans',
             fontSize: 20,
             fontWeight: '400',
-            backgroundColor: '#FFFDD0',
-            color: '#800020',
+            backgroundColor: '#f7f3ea',
+            color: '#692b20',
             padding: 5,
             borderRadius: 20,
             paddingLeft: 15,
             paddingRight: 15,
-            margin: 5
+            margin: 5,
+            width: 115
         }}
         circleStyle={{
             width: 24,
@@ -35,28 +36,27 @@ const SourTimeline = () => {
             borderRadius: 12,
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: 'white',
-            marginTop: 17,
-            marginLeft: -3
+            backgroundColor: '#f7f3ea',
+            marginTop: 11
         }}
         titleStyle={{
-            fontFamily: 'Mandali',
+            fontFamily: 'DM Sans',
             fontSize: 20,
             fontWeight: '600',
-            color: '#FFFDD0',
+            color: '#692b20',
         }}
         descriptionStyle={{
-            fontFamily: 'Mandali',
+            fontFamily: 'DM Sans',
             fontSize: 15,
             fontWeight: '400',
-            color: '#FFFDD0',
+            color: '#692b20',
             maxWidth: 400
         }}
         separatorStyle={{
             marginTop: 48
         }}
         innerCircle={'icon'}
-        lineColor="#FFFDD0"
+        lineColor="#f7f3ea"
         rowContainerStyle={{
             marginTop: 20
         }}

@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, ActivityIndicator, Pressable, ImageBackground } from 'react-native';
+import { View, Text, TouchableOpacity, Image, ActivityIndicator, Pressable, ImageBackground } from 'react-native';
 import styles from '@/constants/Style';
 import { useEffect, useState } from 'react';
 import * as Font from 'expo-font';
@@ -16,7 +16,7 @@ export default function NavBar({ current }: { current: string }) {
     useEffect(() => {
         const loadFonts = async () => {
             await Font.loadAsync({
-                'Mandali': require('../assets/fonts/Mandali-Regular.ttf'),
+                'DM Sans': require('../assets/fonts/DMSans-VariableFont_opsz,wght.ttf'),
             });
             setFontsLoaded(true);
         };
@@ -36,9 +36,16 @@ export default function NavBar({ current }: { current: string }) {
         return (
             <>
                 <View style={styles.navbar}>
-                    <View style={[styles.column, { flex: 2}, {}]}>
-                        <Text style={styles.p}>LOGO</Text>
+                    <View style={[styles.column, { flex: 2 }]}>
+                        <View style={[styles.row, { alignItems: 'center' } ]}>
+                            <Text style={[styles.p, {fontWeight: 'bold'}]}>SOUR</Text>
+                            <Image
+                                style={styles.tinyLogo}
+                                source={require('../assets/images/SOUR-bag.png')}
+                            />
+                            </View>
                     </View>
+                    
                     <View style={[styles.column, { flex: 1 }]}>
                         <View style={[styles.row, { justifyContent: 'space-between', alignItems: 'center' } ]}>
                             <Pressable
@@ -66,7 +73,7 @@ export default function NavBar({ current }: { current: string }) {
                                 <Link
                                     href={githubLink}
                                     target="_blank">
-                                    <Icon name='github' color='#FFFDD0' type="font-awesome"/>
+                                    <Icon name='github' color='#692b20' type="font-awesome"/>
                                 </Link>
                             </Pressable>
                         </View>
