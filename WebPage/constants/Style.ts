@@ -53,19 +53,17 @@ const styles = StyleSheet.create({
     marginLeft: width * 0.06,
   },
   link: {
-    fontSize: width * 0.025,
+    fontSize: pFontSize,
     fontFamily: 'DM Sans',
     fontWeight: '400',
     color: '#692b20',
-    marginLeft: 50,
     textDecorationLine: 'underline'
   },
   hover: {
-    fontSize: width * 0.025,
+    fontSize: pFontSize,
     fontFamily: 'DM Sans',
     fontWeight: '400',
     color:'#800020',
-    marginLeft: 50,
     textDecorationLine: 'underline'
   },
   button: {

@@ -11,9 +11,7 @@ export default function NavBar({ current }: { current: string }) {
     const [homeHovered, setHomeHovered] = useState(false);
     const [aboutHovered, setAboutHovered] = useState(false);
     const [contactHovered, setContactHovered] = useState(false);
-    const [prototypeHovered, setPrototypeHovered] = useState(false);
     const githubLink = 'https://github.com/emma-luky/SOUR';
-    const prototypeLink = 'https://www.figma.com/proto/g2zNAIX7VL5Y5x1WFeiQqM/Prototyping-in-Figma?page-id=0%3A1&node-id=0-2&node-type=frame&viewport=70%2C294%2C0.18&t=KqrqD8DWfHfmiwRZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=0%3A2';
 
     useEffect(() => {
         const loadFonts = async () => {
@@ -69,16 +67,6 @@ export default function NavBar({ current }: { current: string }) {
                                 onHoverOut={() => setContactHovered(false)}>
                                 <Link href={'/contact'} style={getLinkStyle('contact', contactHovered)}>
                                     CONTACT
-                                </Link>
-                            </Pressable>
-                            <Pressable
-                                onHoverIn={() => setPrototypeHovered(true)}
-                                onHoverOut={() => setPrototypeHovered(false)}>
-                                <Link
-                                    href={prototypeLink}
-                                    style={getLinkStyle('prototype', prototypeHovered)}
-                                    target="_blank">
-                                    PROTOTYPE
                                 </Link>
                             </Pressable>
                             <Pressable>
