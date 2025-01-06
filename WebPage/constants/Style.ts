@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     width: width * 0.05,
     aspectRatio: 1,
     resizeMode: 'contain',
-    marginLeft: 0,
+    marginLeft: 0,  
     alignSelf: 'center'
   },
   navbarLink: {
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
     paddingRight: '2.5%'
   },
   footerLink: {
-    fontFamily: 'Mandali',
+    fontFamily: 'DM Sans',
     fontSize: footerFontSize,
     fontWeight: '400',
     color: '#FFFDD0',
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     paddingRight: 15,
   },
   footerHover: {
-    fontFamily: 'Mandali',
+    fontFamily: 'DM Sans',
     fontSize: footerFontSize,
     fontWeight: '400',
     color: '#FFFDD0',
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: '#800020',
     backgroundColor: '#FFFDD0',
-    fontFamily: 'Mandali',
+    fontFamily: 'DM Sans',
     fontSize: width * 0.015,
     fontWeight: '400',
     color: '#800020',
