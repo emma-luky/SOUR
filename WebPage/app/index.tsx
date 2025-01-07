@@ -33,16 +33,10 @@ export default function Index() {
             <>
                 <Stack screenOptions={{ headerShown: false }} />
                 <NavBar current='home'/>
-                <ScrollView
-                    style={styles.container}
-                    contentContainerStyle={{alignItems: 'center', justifyContent: 'center'}}
-                    showsVerticalScrollIndicator={false}
-                    >
-                        <Image
-                            source={require('../assets/images/SOUR-logo-bag-transparent.png')}
-                        />
-                </ScrollView>
-            </>
+                <View  style={[styles.container, {alignItems: 'center', justifyContent: 'center'}]}>
+                    <Image source={require('../assets/images/SOUR-logo-bag-transparent.png')}/>
+                </View>
+        </>
         );
     }
 }
