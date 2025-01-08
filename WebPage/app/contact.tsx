@@ -74,14 +74,14 @@ export default function Index() {
                         <TextInput
                             style={[styles.input, { flex: 1 }]}
                             placeholder="Name"
-                            placeholderTextColor="#80002050"
+                            placeholderTextColor="#692b2050"
                             value={form.name}
                             onChangeText={(text) => setForm({ ...form, name: text })}
                         />
                         <TextInput
                             style={[styles.input, { flex: 1 }]}
                             placeholder="Email"
-                            placeholderTextColor="#80002050"
+                            placeholderTextColor="#692b2050"
                             value={form.email}
                             onChangeText={(text) => setForm({ ...form, email: text })}
                             keyboardType="email-address"
@@ -89,7 +89,7 @@ export default function Index() {
                         <TextInput
                             style={[styles.input, {flex: 2}]}
                             placeholder="Message"
-                            placeholderTextColor="#80002050"
+                            placeholderTextColor="#692b2050"
                             value={form.message}
                             onChangeText={(text) => setForm({ ...form, message: text })}
                             multiline
