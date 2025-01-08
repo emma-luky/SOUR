@@ -1,6 +1,6 @@
 # SOUR: Shop, Own, Upcycle, Reuse
-<a href="https://www.figma.com/proto/g2zNAIX7VL5Y5x1WFeiQqM/Prototyping-in-Figma?page-id=0%3A1&node-id=0-2&node-type=frame&viewport=70%2C294%2C0.18&t=KqrqD8DWfHfmiwRZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=0%3A2" target="_blank">High Fidelity Prototype</a>  
-<a href="https://www.sour.clothing/" target="_blank">Learn More and or Contact Us (WebPage)</a>
+[High Fidelity Prototype](https://www.figma.com/proto/g2zNAIX7VL5Y5x1WFeiQqM/SOUR-Prototype?page-id=0%3A1&node-id=0-2&node-type=frame&viewport=70%2C294%2C0.18&t=KqrqD8DWfHfmiwRZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=0%3A2)  
+[Learn More and or Contact Us (WebPage)](https://www.sour.clothing/)
 ## Executive Summary
 SOUR is a social-media-driven, e-commerce mobile application designed to revolutionize second-hand fashion by supporting small businesses and promoting sustainable shopping. The fashion industry is one of the largest contributors to global carbon emissions, with fast fashion being responsible for 10% of total emissions. SOUR encourages second-hand clothing sales by empowering small sellers and providing buyers with an engaging, personalized shopping experience.  
 
