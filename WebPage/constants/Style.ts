@@ -3,7 +3,6 @@ import { ScreenHeight } from 'react-native-elements/dist/helpers';
 
 const { width, height } = Dimensions.get('window');
 const navbarFontSize = width * 0.014;
-const footerFontSize = width * 0.007;
 const pFontSize = width * 0.02;
 
 const styles = StyleSheet.create({
@@ -63,13 +62,13 @@ const styles = StyleSheet.create({
     fontSize: pFontSize,
     fontFamily: 'DM Sans',
     fontWeight: '400',
-    color:'#800020',
+    color:'#7e9151',
     textDecorationLine: 'underline'
   },
   button: {
     borderWidth: 3,
-    borderColor: '#800020',
-    backgroundColor: '#FFFDD0',
+    borderColor: '#692b20',
+    backgroundColor: '#f7f3ea',
     padding: 10,
     marginVertical: 10,
     borderRadius: 20,
@@ -80,7 +79,7 @@ const styles = StyleSheet.create({
     fontSize: width * 0.015,
     fontFamily: 'DM Sans',
     fontWeight: '400',
-    color: '#800020',
+    color: '#692b20',
     margin: 0,
   },
   tinyLogo: {
