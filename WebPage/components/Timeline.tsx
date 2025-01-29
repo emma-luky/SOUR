@@ -5,7 +5,7 @@ const data = [
   {time: '08/2023', title: 'Business Case Development', icon: require('../constants/imgs/Check-mark.png'), description: 'Created a business case and pitch deck.'},
   {time: '09/2024', title: 'Prototype Development', icon: require('../constants/imgs/Check-mark.png'), description: 'Designed a high-fidelity prototype using Figma.'},
   {time: '10/2024', title: 'Funding and Resource Acquisition', icon: require('../constants/imgs/Check-mark.png'), description: 'Recruited key team members and pitched to stakeholders, securing funding for the prototyping phases.'},
-  {time: '02/2025', title: 'Alpha Prototype', description: 'Created the development enviorment and the basic e-commerce version of the application using Python and React Native.'},
+  {time: '02/2025', title: 'Alpha Prototype', icon: require('../constants/imgs/Check-mark.png'), description: 'Created the development enviorment and the basic e-commerce version of the application using Python and React Native.'},
   {time: '02/2025', title: 'Alpha Testing and Feedback'},
   {time: '03/2025', title: 'Beta Prototype', description: 'Implement \'bells and whistles\' that differentiate the application.'},
   {time: '03/2025', title: 'Beta Testing and Feedback'},
