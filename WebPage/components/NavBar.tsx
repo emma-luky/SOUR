@@ -38,12 +38,12 @@ export default function NavBar({ current }: { current: string }) {
                 <View style={styles.navbar}>
                     <View style={[styles.column, { flex: 2 }]}>
                         <View style={[styles.row, { alignItems: 'center' } ]}>
-                            <Text style={[styles.p, {fontWeight: 'bold'}]}>SOUR</Text>
                             <Image
                                 style={styles.tinyLogo}
-                                source={require('../assets/images/SOUR-bag.png')}
+                                source={require('../assets/images/SOUR-mascot.png')}
                             />
-                            </View>
+                            <Text style={[styles.p, {fontWeight: 'bold'}]}>SOUR</Text>
+                        </View>
                     </View>
                     
                     <View style={[styles.column, { flex: 1.5 }]}>
