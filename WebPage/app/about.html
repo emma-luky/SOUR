@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="../assets/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../components/Timeline.js" type="text/javascript" defer></script>
     <title>SOUR | About</title>
     <style>
         @font-face {
@@ -94,26 +95,14 @@
                onmouseover="this.className='hover'" 
                onmouseout="this.className='link'">
                 prototype
-            </a>.
+            </a>
         </p>
         <p class="p">
             Below shows SOUR's past and future milestones.
         </p>
         <div class="timeline-container">
-            <!-- Timeline component would go here -->
-            <div id="timeline-content">
-                <!-- Timeline content will be added via JavaScript -->
-            </div>
+            <timeline-component></timeline-component>
         </div>
     </div>
-
-    <script>
-        // Simple JavaScript to handle the timeline component
-        document.addEventListener('DOMContentLoaded', function() {
-            // This would be replaced with actual timeline implementation
-            const timelineContent = document.getElementById('timeline-content');
-            timelineContent.innerHTML = '<p>Timeline content would be rendered here</p>';
-        });
-    </script>
 </body>
 </html>
