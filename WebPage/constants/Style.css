@@ -49,13 +49,12 @@ p {
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .nav-item {
     margin: 0 10px;
-    font-size: 20px;
     text-decoration: none;
     color: #692b20;
 }
@@ -96,7 +95,7 @@ textarea.input {
 }
 
 p {
-    font-size: 2dvw;
+    font-size: 3dvw;
     line-height: 1.5;
     margin-bottom: 16px;
     color: #692b20;
@@ -119,11 +118,11 @@ button {
 }
 
 button:hover {
-    background-color: #551f18;
+    background-color: #7e9151;
 }
 
 button:disabled {
-    background-color: #997973;
+    background-color: #f98b6960;
     cursor: not-allowed;
 }
 
