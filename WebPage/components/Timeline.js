@@ -51,12 +51,15 @@ class Timeline extends HTMLElement {
                     font-weight: 400;
                     color: #692b20;
                 }
+                small {
+                    color: #692b20;
+                }
             </style>
         </head>
         <div class="timeline">
             <div class="timeline-item">
                 <div class="time">09/2022</div>
-                <div class="circle">✅</div>
+                <div class="circle"><small>&#x2713;</small></div>
                 <div class="content">
                     <div class="title">Ideation and Problem Identification</div>
                     <div class="description">
@@ -66,7 +69,7 @@ class Timeline extends HTMLElement {
             </div>
             <div class="timeline-item">
                 <div class="time">08/2023</div>
-                <div class="circle">✅</div>
+                <div class="circle"><small>&#x2713;</small></div>
                 <div class="content">
                     <div class="title">Business Case Development</div>
                     <div class="description">
@@ -76,7 +79,7 @@ class Timeline extends HTMLElement {
             </div>
             <div class="timeline-item">
                 <div class="time">09/2024</div>
-                <div class="circle">✅</div>
+                <div class="circle"><small>&#x2713;</small></div>
                 <div class="content">
                     <div class="title">Prototype Development</div>
                     <div class="description">
@@ -86,7 +89,7 @@ class Timeline extends HTMLElement {
             </div>
             <div class="timeline-item">
                 <div class="time">10/2024</div>
-                <div class="circle">✅</div>
+                <div class="circle"><small>&#x2713;</small></div>
                 <div class="content">
                     <div class="title">Funding and Resource Acquisition</div>
                     <div class="description">
@@ -96,7 +99,7 @@ class Timeline extends HTMLElement {
             </div>
             <div class="timeline-item">
                 <div class="time">02/2025</div>
-                <div class="circle">✅</div>
+                <div class="circle"><small>&#x2713;</small></div>
                 <div class="content">
                     <div class="title">Alpha Prototype</div>
                     <div class="description">
@@ -105,8 +108,8 @@ class Timeline extends HTMLElement {
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="time">02/2025</div>
-                <div class="circle">✅</div>
+                <div class="time">03/2025</div>
+                <div class="circle"><small>&#x2713;</small></div>
                 <div class="content">
                     <div class="title">Beta Prototype</div>
                     <div class="description">
@@ -115,14 +118,14 @@ class Timeline extends HTMLElement {
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="time">02/2025</div>
+                <div class="time">03/2025</div>
                 <div class="circle"></div>
                 <div class="content">
                     <div class="title">Beta User Testing</div>
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="time">02/2025</div>
+                <div class="time">04/2025</div>
                 <div class="circle"></div>
                 <div class="content">
                     <div class="title">Final, MVP</div>
@@ -132,7 +135,7 @@ class Timeline extends HTMLElement {
                 </div>
             </div>
             <div class="timeline-item">
-                <div class="time">04/2025</div>
+                <div class="time">05/2025</div>
                 <div class="circle"></div>
                 <div class="content">
                     <div class="title">Product Launch</div>
