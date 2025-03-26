@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/images/favicon.ico">
+    <link rel="stylesheet" href="../constants/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .team-member:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 20px;
+        }
+        .bio {
+            flex: 1;
+        }
+        .contact {
+            margin-top: 10px;
+        }
+    </style>
+    <script src="../components/Timeline.js" type="text/javascript" defer></script>
+    <script src="../components/NavBar.js" type="text/javascript" defer></script>
+    <title>SOUR | Team</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="nav-item">
+            <img src="../assets/images/SOUR-logo-horizontal.png" height="25">
+        </a>
+        <a href="/" class="nav-item">Home</a>
+        <a href="/about" class="nav-item">About</a>
+        <a href="/contact" class="nav-item">Contact</a>
+        <a href="/team" class="nav-item current">Team</a>
+        <a href="https://github.com/emma-luky/SOUR" class="nav-item" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-github" style="font-size:24px; color: #692b20;"></i>
+        </a>
+    </nav>
+    <div class="container">
+        <h2>Meet the SOUR team</h2>
+        <div class="team-member">
+            <img src="../assets/images/alex.png" alt="Alex Thurgood">
+            <div class="bio">
+                <h3>Alex Thurgood</h3>
+                <small>
+                    [bio]
+                </small>
+                <div class="contact">
+                    <small>Email: <a href="mailto:emmahluk@gmail.com">adthurgood@example.com</a></small>
+                    <small>LinkedIn: <a href="https://www.linkedin.com/in/alex-thurgood-629b11224/" target="_blank">linkedin.com/in/alex-thurgood-629b11224/</a></small>
+                </div>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="../assets/images/ashlyn.jpg" alt="Ashlyn Hansen">
+            <div class="bio">
+                <h3>Ashlyn Hansen</h3>
+                <small>
+                    [bio]
+                </small>
+                <div class="contact">
+                    <small>Email: <a href="mailto:ashlynhansen33@gmail.com">ashlynhansen33@example.com</a></small>
+                    <small>LinkedIn: <a href="https://www.linkedin.com/in/ashlyn-hansen-b8459622a/" target="_blank">linkedin.com/in/ashlyn-hansen-b8459622a/</a></small>
+                </div>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="../assets/images/emma.jpg" alt="Emma Luk">
+            <div class="bio">
+                <h3>Emma Luk</h3>
+                <small>
+                    Emma Luk is a full-stack developer with expertise in React, JavaScript, Python, and TypeScript. She is currently pursuing a degree in Computer Science and has worked on various projects, including social eCommerce platforms and networking tools. Her interests include software development, UI/UX design, and entrepreneurship.
+                </small>
+                <div class="contact">
+                    <small>Email: <a href="mailto:emmahluk@gmail.com">emmahluk@example.com</a></small>
+                    <small>LinkedIn: <a href="https://www.linkedin.com/in/emma-h-luk/" target="_blank">linkedin.com/in/emmaluk</a></small>
+                </div>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="../assets/images/ricardo.JPG" alt="Ricardo Baeza">
+            <div class="bio">
+                <h3>Ricardo Baeza</h3>
+                <small>
+                    [bio]
+                </small>
+                <div class="contact">
+                    <small>Email: <a href="mailto:Baezaric3600@gmail.com">Baezaric3600@example.com</a></small>
+                    <small>LinkedIn: <a href="https://www.linkedin.com/in/ricardobaeza/" target="_blank">linkedin.com/in/ricardobaeza</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
