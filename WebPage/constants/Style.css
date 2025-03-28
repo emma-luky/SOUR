@@ -37,9 +37,23 @@ h2 {
     color: #692b20;
 }
 
+h3 {
+    font-size: 2.5dvw;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #692b20;
+}
+
 p {
     font-size: 2dvw;
     line-height: 1.5;
+    margin-bottom: 16px;
+    color: #692b20;
+}
+
+small {
+    font-size: 1dvw;
     margin-bottom: 16px;
     color: #692b20;
 }
@@ -91,13 +105,6 @@ textarea.input {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-family: 'DM Sans', sans-serif;
-    color: #692b20;
-}
-
-p {
-    font-size: 3dvw;
-    line-height: 1.5;
-    margin-bottom: 16px;
     color: #692b20;
 }
 
