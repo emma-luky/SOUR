@@ -21,6 +21,19 @@ body {
     min-height: calc(100vh - 60px); /* Adjust for navbar height */
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+}
+
 h1 {
     font-size: 10dvw;
     color: #692b20;

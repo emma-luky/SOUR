@@ -38,6 +38,14 @@ class Timeline extends HTMLElement {
                     align-items: center;
                     justify-content: center;
                 }
+                .circle small {
+                    font-size: 16px;
+                    line-height: 1;
+                    font-weight: bold;
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                }
                 .content {
                     max-width: 400px;
                 }
