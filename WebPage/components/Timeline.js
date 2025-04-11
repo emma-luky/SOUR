@@ -119,14 +119,14 @@ class Timeline extends HTMLElement {
             </div>
             <div class="timeline-item">
                 <div class="time">03/2025</div>
-                <div class="circle"></div>
+                <div class="circle"><small>&#x2713;</small></div>
                 <div class="content">
                     <div class="title">Beta User Testing</div>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="time">04/2025</div>
-                <div class="circle"></div>
+                <div class="circle"><small>&#x2713;</small></div>
                 <div class="content">
                     <div class="title">Final, MVP</div>
                     <div class="description">
