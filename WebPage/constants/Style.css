@@ -71,6 +71,11 @@ small {
     color: #692b20;
 }
 
+.text-left {
+    align-self: flex-start;
+    width: 100%;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -158,3 +163,14 @@ button:disabled {
     max-width: 100%;
     height: auto;
 }
+
+footer {
+    background-color: #f7f3ea;
+    font-family: sans-serif;
+    color: #692b20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="../assets/images/favicon.ico">
@@ -9,6 +10,7 @@
     <script src="../components/Timeline.js" type="text/javascript" defer></script>
     <title>SOUR | Contact</title>
 </head>
+
 <body>
     <nav class="navbar">
         <a href="/" class="nav-item">
@@ -22,35 +24,16 @@
             <i class="fa fa-github" style="font-size:24px"></i>
         </a> -->
     </nav>
-    
+
     <div class="container">
         <h2 class="h2">Contact</h2>
         <p>Have any questions or interested in becoming one of our first users, reach out!</p>
-        
+
         <div class="form-container">
-            <input 
-                type="text" 
-                class="input" 
-                placeholder="Name" 
-                id="name" 
-                required
-            />
-            <input 
-                type="email" 
-                class="input" 
-                placeholder="Email" 
-                id="email" 
-                required
-            />
-            <textarea 
-                class="input" 
-                placeholder="Message" 
-                id="message" 
-                required
-            ></textarea>
-            <button
-                id="submit-button" 
-                onclick="handleSubmit()">
+            <input type="text" class="input" placeholder="Name" id="name" required />
+            <input type="email" class="input" placeholder="Email" id="email" required />
+            <textarea class="input" placeholder="Message" id="message" required></textarea>
+            <button id="submit-button" onclick="handleSubmit()">
                 SEND MESSAGE
             </button>
         </div>
@@ -62,17 +45,17 @@
             const emailInput = document.getElementById('email');
             const messageInput = document.getElementById('message');
             const submitButton = document.getElementById('submit-button');
-            
+
             // Validate form
             if (!nameInput.value || !emailInput.value || !messageInput.value) {
                 alert('Please fill in all fields.');
                 return;
             }
-            
+
             // Disable button and show loading state
             submitButton.disabled = true;
             submitButton.textContent = 'SENDING...';
-            
+
             // EmailJS implementation
             const data = {
                 service_id: 'service_o2ntb0h',
@@ -84,33 +67,38 @@
                     message: messageInput.value,
                 }
             };
-            
+
             fetch('https://api.emailjs.com/api/v1.0/email/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
             })
-            .then(response => {
-                if (response.ok) {
-                    console.log('Success', 'Message sent successfully!');
-                    nameInput.value = '';
-                    emailInput.value = '';
-                    messageInput.value = '';
-                    alert('Message sent successfully!');
-                } else {
-                    console.log('Error', 'Failed to send the message. Please try again later.');
-                    alert('Failed to send the message. Please try again later.');
-                }
-            })
-            .catch(error => {
-                console.log('Error', 'An error occurred while sending the message.');
-                alert('An error occurred while sending the message.');
-            })
-            .finally(() => {
-                submitButton.disabled = false;
-                submitButton.textContent = 'SEND MESSAGE';
-            });
+                .then(response => {
+                    if (response.ok) {
+                        console.log('Success', 'Message sent successfully!');
+                        nameInput.value = '';
+                        emailInput.value = '';
+                        messageInput.value = '';
+                        alert('Message sent successfully!');
+                    } else {
+                        console.log('Error', 'Failed to send the message. Please try again later.');
+                        alert('Failed to send the message. Please try again later.');
+                    }
+                })
+                .catch(error => {
+                    console.log('Error', 'An error occurred while sending the message.');
+                    alert('An error occurred while sending the message.');
+                })
+                .finally(() => {
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'SEND MESSAGE';
+                });
         }
     </script>
 </body>
+<footer class="footer">
+    <img src="../assets/images/SOUR-mascot.png" height="100" alt="SOUR Mascot">
+    <small style="font-size: x-small;">&copy; 2025 SOUR. All rights reserved.</small>
+</footer>
+
 </html>
